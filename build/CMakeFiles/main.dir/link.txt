@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/main.dir/matirx.c.o CMakeFiles/main.dir/unit_test.c.o  -o main -rdynamic 

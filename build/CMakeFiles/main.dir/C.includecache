@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ice/CPP/Project4/matirx.c
+matrix.h
+/home/ice/CPP/Project4/matrix.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+immintrin.h
+-
+mmintrin.h
+-
+emmintrin.h
+-
+xmmintrin.h
+-
+omp.h
+-
+
+/home/ice/CPP/Project4/matrix.h
+stdlib.h
+-
+string.h
+-
+
