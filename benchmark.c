@@ -77,16 +77,17 @@ void test(size_t size) {
 
     printf("Advanced packing + SIMD + OpenMP + Paralleling method start\n");
     copyMatrix(a, c);
+    start = clock();
     multiplyMatrix_AdvancedPacking_SIMD_OMP_Paralleld(a, b);
     end = clock();
     printf("Advanced packing + SIMD + OpenMP + Paralleling method: %ldms\n", end - start);
 
-    printf("Packing + SIMD + OpenMP + Paralleling + Blocking method start\n");
+    printf("Advanced packing + SIMD + OpenMP + Paralleling + Blocking method start\n");
     copyMatrix(a, c);
     start = clock();
     multiplyMatrix_Packing_SIMD_OMP_Blocking(a, b);
     end = clock();
-    printf("Packing + SIMD + OpenMP + Paralleling + Blocking: %ldms\n", end - start);
+    printf("Advanced packing + SIMD + OpenMP + Paralleling + Blocking: %ldms\n", end - start);
 
     deleteMatrix(a);
     deleteMatrix(b);
@@ -96,12 +97,12 @@ void test(size_t size) {
 
 int main() {
 
-    // test(16);
+//    test(16);
     // test(128);
-    test(1024); 
+    // test(1024); 
     // test(2048);
     // test(4096);
-    // test(8192);
+    test(8192);
 
     // out of mem
     // test(65536);

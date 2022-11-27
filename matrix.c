@@ -245,7 +245,7 @@ int multiplyMatrix_Reorderd(struct Matrix *const a, const struct Matrix *const b
             size_t row = a->row, col = b->col, 
                    i, j, k, index;
             float *pData = (float*) _aligned_malloc(row * col * sizeof(float), ALIGNMENT);
-            float r;
+            register float r;
             for (i = 0; i < row; i++) {
                 for (k = 0; k < a->col; k++) {
                     r = a->pData[i * a->col + k];
