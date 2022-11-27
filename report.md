@@ -1,7 +1,4 @@
 # CS205 Project 4 Report
-**SID:** 12110631
-
-**Name:** 龚凌琥 (GONG Linghu)
 
 Reference: https://github.com/flame/how-to-optimize-gemm/wiki
 
@@ -450,16 +447,16 @@ Out of memory.
 单位: GFLOP/s
 
 **在 1K 下的性能分析：**
-![](/img/p1.png)
+![](img/p1.png)
 
 **在 2K 下的性能分析：**
-![](/img/p2.png)
+![](img/p2.png)
 
 **在 4K 下的性能分析：**
-![](/img/p4.png)
+![](img/p4.png)
 
 **在 8K 下的性能分析：**
-![](/img/p8.png)
+![](img/p8.png)
 
 ## Part 4 - Difficulties & Problems
 

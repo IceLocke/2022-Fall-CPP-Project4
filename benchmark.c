@@ -19,8 +19,6 @@ void test(size_t size) {
     struct Matrix *c = createMatrix(size, size);
     struct Matrix *d = createMatrix(size, size);
 
-    printf("%p\n%p\n%p\n", a, b, c);
-
     clock_t start, end, inteval;
 
     printf("Test start, matrix size: %lu\n", size);
@@ -31,11 +29,11 @@ void test(size_t size) {
 
     printf("Start calculating\n");
 
-    // printf("Plain method start\n");
-    // start = clock();
-    // multiplyMatrix(a, b);
-    // end = clock();
-    // printf("Plain method: %ldms\n", end - start);
+    printf("Plain method start\n");
+    start = clock();
+    multiplyMatrix(a, b);
+    end = clock();
+    printf("Plain method: %ldms\n", end - start);
 
     printf("OpenBLAS SGEMM start\n");
     start = clock();
@@ -97,12 +95,12 @@ void test(size_t size) {
 
 int main() {
 
-//    test(16);
+    // test(16);
     // test(128);
     // test(1024); 
     // test(2048);
-    // test(4096);
-    test(8192);
+    test(4096);
+    // test(8192);
 
     // out of mem
     // test(65536);
